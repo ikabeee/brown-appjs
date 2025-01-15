@@ -1,0 +1,140 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  
+  .input-group {
+    position: relative;
+    margin-bottom: 1rem !important; 
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 0.625rem 0.875rem;
+    background-color: white;
+    border: 1px solid #6B3F09;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }
+  
+  .input-group input:focus {
+    outline: none;
+    border-color: #5E0826;
+    box-shadow: 0 0 0 1px #5E0826;
+  }
+  
+  .input-group label {
+    position: absolute;
+    left: 0;
+    top: -1.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #6B3F09;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .input-group input:focus + label {
+    color: #5E0826;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox-group input[type="checkbox"] {
+    height: 1rem;
+    width: 1rem;
+    color: #6B2009;
+    border: 1px solid #6B3F09;
+    border-radius: 0.25rem;
+  }
+  
+  .checkbox-group label {
+    margin-left: 0.5rem;
+    font-size: 0.875rem;
+    color: #6B3F09;
+  }
+  
+  .custom-button {
+    width: 100%;
+    background-color: #6B2009;
+    color: white;
+    font-weight: bold;
+    padding: 0.625rem 1.25rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+  }
+  
+  .custom-button:hover {
+    background-color: #6B3F09;
+  }
+  
+  .custom-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px white, 0 0 0 4px #5E0826;
+  }
+  
+  .register-page {
+    min-height: 100vh;
+    background-color: #6B2009;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1rem;
+  }
+  
+  .register-container {
+    max-width: 32rem;
+    width: 100%;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  .register-header {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .register-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #6B2009;
+  }
+  
+  .register-subtitle {
+    margin-top: 0.75rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #6B3F09;
+  }
+  
+  .register-subtitle a {
+    color: #6B3F09;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .register-subtitle a:hover {
+    color: #5E0826;
+  }
+  
+  @media (min-width: 640px) {
+    .register-page {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .register-page {
+      padding: 2rem;
+    }
+  }
+  
