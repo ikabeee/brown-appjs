@@ -7,10 +7,6 @@ import {
   import Chart from "react-apexcharts";
   import { Square3Stack3DIcon } from "@heroicons/react/24/outline";
    
-  // If you're using Next.js please use the dynamic import for react-apexcharts and remove the import from the top for the react-apexcharts
-  // import dynamic from "next/dynamic";
-  // const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
-   
   const chartConfig = {
     type: "pie",
     width: 280,
@@ -28,7 +24,7 @@ import {
       dataLabels: {
         enabled: false,
       },
-      colors: ["#020617", "#ff8f00", "#00897b", "#1e88e5", "#d81b60"],
+      colors: [  "#D2B48C","#8B4513","#A0522D","#6F4E37","#4B2E2B"],
       legend: {
         show: false,
       },
