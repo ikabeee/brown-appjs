@@ -32,7 +32,7 @@ import {
       dataLabels: {
         enabled: false,
       },
-      colors: ["#020617"],
+      colors: ["#40251B"],
       plotOptions: {
         bar: {
           columnWidth: "40%",
@@ -48,7 +48,7 @@ import {
         },
         labels: {
           style: {
-            colors: "#616161",
+            colors: "#40251B",
             fontSize: "12px",
             fontFamily: "inherit",
             fontWeight: 400,
@@ -69,7 +69,7 @@ import {
       yaxis: {
         labels: {
           style: {
-            colors: "#616161",
+            colors: "#40251B",
             fontSize: "12px",
             fontFamily: "inherit",
             fontWeight: 400,
@@ -78,7 +78,7 @@ import {
       },
       grid: {
         show: true,
-        borderColor: "#dddddd",
+        borderColor: "#6B3F09AA",
         strokeDashArray: 5,
         xaxis: {
           lines: {

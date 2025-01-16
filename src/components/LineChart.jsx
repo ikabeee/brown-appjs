@@ -28,7 +28,7 @@ import {
       dataLabels: {
         enabled: false,
       },
-      colors: ["#020617"],
+      colors: ["#40251B"],
       stroke: {
         lineCap: "round",
         curve: "smooth",
@@ -45,7 +45,7 @@ import {
         },
         labels: {
           style: {
-            colors: "#616161",
+            colors: "#40251B",
             fontSize: "12px",
             fontFamily: "inherit",
             fontWeight: 400,
@@ -66,7 +66,7 @@ import {
       yaxis: {
         labels: {
           style: {
-            colors: "#616161",
+            colors: "#40251B",
             fontSize: "12px",
             fontFamily: "inherit",
             fontWeight: 400,
@@ -75,7 +75,7 @@ import {
       },
       grid: {
         show: true,
-        borderColor: "#dddddd",
+        borderColor: "#6B3F09",
         strokeDashArray: 5,
         xaxis: {
           lines: {
