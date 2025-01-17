@@ -1,11 +1,14 @@
-import Register from "./pages/Register/Register";
-import Login from "./pages/Login/Login";
-
 
 function App() {
 
-  return (    
+  return (
     <>
+      <Routes>
+        <Route element={<Layout />} >
+          <Route index element={<Dashboard />} />
+          <Route path="login" element={<Login />} />
+        </Route>
+      </Routes>
     </>
   )
 }
