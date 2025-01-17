@@ -9,6 +9,7 @@ import { Square3Stack3DIcon } from "@heroicons/react/24/outline";
 
 const chartConfig = {
   type: "bar",
+  height: "100%",  // Cambiar de 240 a "100%"
   series: [
     {
       name: "Sales",
@@ -20,8 +21,7 @@ const chartConfig = {
       toolbar: {
         show: false,
       },
-      height: "100%", // Se asegura que el gráfico sea responsivo en altura
-      width: "100%",  // Se asegura que el gráfico sea responsivo en ancho
+      parentHeightOffset: 0,
     },
     title: {
       show: "",
@@ -98,12 +98,12 @@ const chartConfig = {
 
 export default function BarChart() {
   return (
-    <Card className="w-full">
+    <Card className="w-full h-full shadow-xl rounded-2xl pt-2">
       <CardHeader
         floated={false}
         shadow={false}
         color="transparent"
-        className="flex flex-col gap-4 rounded-none md:flex-row md:items-center"
+        className="flex flex-col gap-4 rounded-none md:flex-row md:items-center p-2"
       >
         <div className="w-max rounded-lg bg-gray-900 p-5 text-white">
           <Square3Stack3DIcon className="h-6 w-6" />
@@ -122,8 +122,8 @@ export default function BarChart() {
           </Typography>
         </div>
       </CardHeader>
-      <CardBody className="px-2 pb-0">
-        <div className="w-full h-[300px] lg:h-[400px]"> {/* Responsivo en altura */}
+      <CardBody className="px-2 pb-0 h-[250px]">  {/* Agregar altura fija */}
+        <div className="w-full h-full">
           <Chart {...chartConfig} />
         </div>
       </CardBody>
