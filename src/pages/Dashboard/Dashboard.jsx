@@ -4,7 +4,7 @@ import PieChart from "../../components/PieChart";
 
 export default function Dashboard() {
   return (
-    <div className="flex flex-col space-y-6">
+    <div className="flex flex-col space-y-6 z-0">
 
       <div className="w-full h-[300px]">
         <div className="w-full h-full">
