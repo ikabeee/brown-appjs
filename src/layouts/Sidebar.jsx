@@ -24,7 +24,7 @@ export default function Sidebar() {
     return (
 
 
-        <Card className="h-[calc(100vh-.01rem)] w-full max-w-[16rem] p-4 bg-[#D9D0C1] rounded-none lg:flex flex-col hidden">
+        <Card className="sticky top-0 h-[calc(100vh-.01rem)] w-full max-w-[16rem] p-4 bg-[#D9D0C1] rounded-none lg:flex flex-col hidden">
 
             <div className="mb-2 p-4">
                 <Typography variant="h5" className="text-[#40251B] font-bold text-center" >
