@@ -10,8 +10,8 @@ import { Square3Stack3DIcon } from "@heroicons/react/24/outline";
 
 const chartConfig = {
   type: "pie",
-  width: 280,
-  height: 280,
+  width: 245,
+  height: 245,
   series: [44, 55, 13, 43, 22],
   options: {
     chart: {
@@ -34,7 +34,7 @@ const chartConfig = {
 
 export default function PieChart() {
   return (
-    <Card className="w-full shadow-xl rounded-2xl pt-2">
+    <Card className="w-full shadow-xl rounded-2xl">
       <CardHeader
         floated={false}
         shadow={false}
