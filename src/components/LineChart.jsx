@@ -91,16 +91,15 @@ export default function LineChart() {
           <Square3Stack3DIcon className="h-6 w-6" />
         </div>
         <div>
-          <Typography variant="h6" color="blue-gray">
-            Line Chart
+          <Typography variant="h6" color="blue-gray" className="font-bold">
+            Tendencias de Ventas Mensuales
           </Typography>
           <Typography
             variant="small"
             color="gray"
-            className="max-w-sm font-normal"
+            className="max-w font-normal"
           >
-            Visualize your data in a simple way using the
-            @material-tailwind/react chart plugin.
+            Este gráfico muestra las tendencias mensuales de ventas de la tienda, ayudando a visualizar las fluctuaciones del rendimiento durante el año.
           </Typography>
         </div>
       </CardHeader>

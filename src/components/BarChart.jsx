@@ -109,16 +109,15 @@ export default function BarChart() {
           <Square3Stack3DIcon className="h-6 w-6" />
         </div>
         <div>
-          <Typography variant="h6" color="blue-gray">
-            Bar Chart
+          <Typography variant="h6" color="blue-gray" className="font-bold">
+            Ventas por mes
           </Typography>
           <Typography
             variant="small"
             color="gray"
-            className="max-w-sm font-normal"
+            className="max-w font-normal"
           >
-            Visualize your data in a simple way using the
-            @material-tailwind/react chart plugin.
+            Esta gráfica de ventas muestra el comportamiento de las ventas mensuales a lo largo de un año. Utilizando una línea suave, los datos se presentan de manera clara y fácil de interpretar. Los valores de las ventas comienzan en 50 unidades en abril, alcanzan un pico significativo en agosto con 500 unidades, y experimentan fluctuaciones en los meses siguientes, con un ligero aumento hacia diciembre.
           </Typography>
         </div>
       </CardHeader>

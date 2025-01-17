@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import './Login.css';
 import LoginForm from '/src/components/LoginForm';
 
@@ -11,9 +12,9 @@ export default function Login() {
           </h2>
           <p className="login-subtitle">
             O{' '}
-            <a href="#">
+            <Link to="/register">
               regístrate si aún no tienes una cuenta
-            </a>
+            </Link>
           </p>
         </div>
         <LoginForm />

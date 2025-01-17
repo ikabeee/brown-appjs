@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useForm } from 'react-hook-form';
 import PropTypes from 'prop-types';
+import { useNavigate } from 'react-router-dom';
 
 const CustomButton = ({ type = 'button', onClick, children, ...props }) => {
   return (
@@ -21,37 +22,62 @@ CustomButton.propTypes = {
 };
 
 const LoginForm = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+  const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Iniciar sesión con:', email, password);
+  const onSubmit = () => {
+    navigate('/');
   };
 
   return (
-    <form onSubmit={handleSubmit} className="form-container" style={{ gap: '1.25rem' }}>
+    <form
+      onSubmit={handleSubmit(onSubmit)}
+      className="form-container"
+      style={{ gap: '1.25rem' }}
+    >
       <div className="input-group" style={{ marginBottom: '2rem' }}>
         <input
           type="email"
           id="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
           placeholder="tu@ejemplo.com"
+          {...register('email', {
+            required: 'El correo electrónico es obligatorio.',
+            pattern: {
+              value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
+              message: 'Ingresa un correo electrónico válido.',
+            },
+          })}
         />
         <label htmlFor="email">Correo Electrónico</label>
+        {errors.email && (
+          <p style={{ color: 'red', fontSize: '0.875rem' }}>
+            {errors.email.message}
+          </p>
+        )}
       </div>
       <div className="input-group" style={{ marginBottom: '2rem' }}>
         <input
           type="password"
           id="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
           placeholder="••••••••"
+          {...register('password', {
+            required: 'La contraseña es obligatoria.',
+            minLength: {
+              value: 6,
+              message: 'La contraseña debe tener al menos 6 caracteres.',
+            },
+          })}
         />
         <label htmlFor="password">Contraseña</label>
+        {errors.password && (
+          <p style={{ color: 'red', fontSize: '0.875rem' }}>
+            {errors.password.message}
+          </p>
+        )}
       </div>
       <div
         style={{

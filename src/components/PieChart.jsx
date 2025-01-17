@@ -45,16 +45,15 @@ export default function PieChart() {
           <Square3Stack3DIcon className="h-6 w-6" />
         </div>
         <div>
-          <Typography variant="h6" color="blue-gray">
-            Pie Chart
+          <Typography variant="h6" color="blue-gray" className="font-bold">
+          Distribución de Ventas por Categoría
           </Typography>
           <Typography
             variant="small"
             color="gray"
-            className="max-w-sm font-normal"
+            className="max-w font-normal"
           >
-            Visualize your data in a simple way using the
-            @material-tailwind/react chart plugin.
+            Este gráfico muestra la distribución de las ventas de la tienda por diferentes categorías de productos, lo que permite identificar las más demandadas.
           </Typography>
         </div>
       </CardHeader>
