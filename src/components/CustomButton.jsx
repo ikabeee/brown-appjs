@@ -6,7 +6,7 @@ export default function CustomButton({ type = 'button', onClick, children }) {
         <button
             type={type}
             onClick={onClick}
-            className="w-full bg-[#6B2009] hover:bg-[#6B3F09] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300"
+            className="w-full bg-[#40251B] hover:bg-[#6B3F09] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300"
         >
             {children}
         </button>
