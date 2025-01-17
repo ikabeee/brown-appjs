@@ -1,6 +1,5 @@
 import { PresentationChartBarIcon, Cog6ToothIcon, PowerIcon, UserCircleIcon } from "@heroicons/react/24/solid";
 import { useState } from "react";
-import { Outlet } from "react-router";
 import { motion } from "framer-motion";
 export default function SimpleNavbar() {
   const [isDropdownOpen, setOpenMenu] = useState(false);
@@ -97,7 +96,7 @@ export default function SimpleNavbar() {
               </svg>
             </button>
 
-            <div className="relative ml-3">
+            <div className="relative ml-2">
               <div>
                 <button
                   type="button"
@@ -185,10 +184,6 @@ export default function SimpleNavbar() {
       )}
 
     </nav>
-      <div className="flex-1 p-4">
-        <Outlet />
-      </div>
-
     </>
   );
 }
